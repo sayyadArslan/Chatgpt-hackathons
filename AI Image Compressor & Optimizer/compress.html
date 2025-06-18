@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompressIQ-Compress Now</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="compress.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar" class="navbar">
+            <h1>CompressIQ</h1>
+            <div id="link" class="list">
+                <a href="">About</a>
+                <a href="">Contact</a>
+                <a href="">Help</a>
+                <a href="">About</a>
+            </div>
+            <img id="menu" src="menu.png" alt="">
+        </nav>
+    </header>
+    <main>
+        <section class="compress">
+            <div class="compress-head">
+                <h1>AI Image Compress & Optimizer</h1>
+            </div>
+
+
+            <section class="optimize">
+                <div class="before">
+                    <h1>Before</h1>
+                    <img id="preview" src="" alt="">
+                    <h2 id="imagename">Image Size</h2>
+                </div>
+                <div class="after">
+                    <h1>After</h1>
+                    <img id="newimage" src="" alt="">
+                    <h2 id="newsize" >Image Size</h2>
+                </div>
+            </section>
+            <div class="btns">
+                <input type="file" accept="image" name="file" id="file" hidden>
+                <label for="file" class="custom-file-upload">
+                    Upload File
+                </label>
+                <button id="compress-btn">Compress Now</button>
+                <button id="Download" style="display: none;">Download</button>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="compress.js"></script>
+</body>
+
+</html>

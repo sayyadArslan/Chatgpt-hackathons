@@ -1,0 +1,152 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.compress {
+    padding: 15px;
+    margin-top: 30px;
+    background-color: #0F0F0F;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(239, 237, 237, 0.2);
+}
+
+.compress-head h1 {
+    font-size: 3rem;
+    background: linear-gradient(to left, rgb(93, 11, 225), rgb(10, 116, 223));
+    background-clip: text;
+    color: transparent;
+}
+
+.optimize {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    box-sizing: border-box;
+}
+
+.optimize div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.optimize h2 {
+    font-size: 22px;
+    background: linear-gradient(to left, rgb(230, 9, 230), rgb(50, 50, 231));
+    background-clip: text;
+    color: transparent;
+    display: none;
+}
+
+.optimize img {
+    background-color: #000000;
+    opacity: 30%;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    object-fit: cover;
+    border: 2px solid;
+}
+
+.btns {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.btns button {
+    margin-top: 25px;
+    width: 160px;
+    height: 45px;
+    border: none;
+    border-radius: 50px;
+    font-size: large;
+    background: linear-gradient(to left, rgb(230, 9, 230), rgb(50, 50, 231));
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+     margin-top: 25px;
+    width: 160px;
+    height: 45px;
+    border: none;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    justify-content: center;
+    font-size: large;
+    background: linear-gradient(to left, rgb(230, 9, 230), rgb(50, 50, 231));
+}
+
+.custom-file-upload:hover {
+    transform: scale(1.1);
+}
+
+
+
+.btns button:hover {
+    transform: scale(1.1);
+}
+
+
+
+@media (max-width:950px)
+ {
+   
+    .hero-head h1
+    {
+        font-size: 2rem;
+    }
+    .compress-head h1
+    {
+        font-size: 2rem;
+    }
+    .optimize img
+    {
+       width: 300px;
+       height: 300px;
+    }
+
+}
+@media (max-width:800px)
+ {
+     .compress-head h1
+    {
+        font-size: 2rem;
+    }
+    .optimize img
+    {
+       width: 280px;
+       height: 280px;
+    }
+}
+@media (max-width:750px)
+ {
+   .optimize 
+    {
+       flex-direction: column;
+    }
+    .btns
+    {
+        gap:10px
+    }
+    .compress-head h1
+    {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+}
